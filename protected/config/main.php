@@ -117,7 +117,7 @@ return array(
             'emulatePrepare' => true,
             'schemaCachingDuration' => 3600,
             'username' => 'root',
-            'password' => 'jack123',
+            'password' => 'root',
             'charset' => 'utf8',
         ),
         'errorHandler'=>array(

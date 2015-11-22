@@ -47,14 +47,16 @@ class UserIdentity extends CUserIdentity
                 $this->setState('state_id',$user->userDetails->state_id);
                 $this->setState('city_id',$user->userDetails->city_id);
 
-                $this->_name=$user->userDetails->first_name;
+                $this->_name=$user->email;
+                //userDetails->first_name;
             }
             else if($user->user_type_id==7)
             {
                 $this->setState('state_id',$user->businessOwnerDetails->state_id);
                 $this->setState('city_id',$user->businessOwnerDetails->city_id);
 
-                $this->_name=$user->businessOwnerDetails->business_profile_name;
+                $this->_name=$user->email;
+                //businessOwnerDetails->business_profile_name;
 
             }
 
